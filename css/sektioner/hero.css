@@ -1,0 +1,95 @@
+/* ================================ HERO ================================ */
+
+.hero {
+    /* Wrapper för hero */
+    display: flex;
+    justify-content: center;
+}
+
+.hero__content {
+    /* Wrapper för innehållet i hero */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: var(--fnt-hero);
+    justify-content: center;
+    margin-bottom: 5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__content h1 {
+    /* Styla titeltexten i hero */
+    font-size: max(4.7vw, 2.5rem);
+    font-weight: var(--wgt-hero-bold);
+    max-width: 16ch;
+}
+
+.hero__content p {
+    /* Styla brödtexten i hero */
+    font-size: 1.1rem;
+    font-weight: var(--wgt-hero-regular);
+    max-width: 43ch;
+}
+
+.hero__image {
+    /* Dölj bilden i hero på mindre skärmar */
+    display: none;
+}
+
+.hero-cta {
+    /* Wrapper för knappar & länkar i hero */
+    display: flex;
+}
+
+.hero-cta button {
+    /* Lägg till margin till höger om första knappen i hero */
+    margin-right: 2rem;
+}
+
+.hero-cta .watch-video {
+    /* Styla watch video knappen/länken */
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: var(--wgt-main-medium);
+    font-family: var(--fnt-body);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hero-cta .watch-video .play {
+    /* Styla play-knappen i hero */
+    background-color: var(--clr-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 3rem;
+    min-height: 3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    outline: 0.15rem solid var(--clr-secondary);
+    outline-offset: -1px;
+}
+
+.hero-cta .watch-video:hover .play {
+    /* Animera play-knappen vid hover*/
+    animation-name: pulse-outline;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.hero-cta .watch-video a {
+    /* styla watch video länken */
+    transition: color ease-in-out 0.2s;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.hero-cta .watch-video:hover a {
+    /* Ändra färg vid hover på watch video länken */
+    color: var(--clr-secondary);
+}

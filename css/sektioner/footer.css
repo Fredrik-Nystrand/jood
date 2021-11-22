@@ -1,0 +1,47 @@
+/* ================================ FOOTER ================================ */
+
+footer {
+    /* wrapper för hela footern */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../../img/Footer-BG.svg);
+    background-size: cover;
+    padding: 3rem;
+    font-size: 1rem;
+    font-weight: var(--wgt-main-medium);
+    font-family: var(--fnt-body);
+}
+
+footer .social-links {
+    /* wrappern för länkarna till sociala medier */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .social-links a {
+    /* Styla länkarna */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.082);
+    color: #ffffff;
+    width: 2rem;
+    height: 2rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color ease-in-out 0.2s;
+}
+
+footer .social-links a:hover {
+    /* Ändra färg vid hover */
+    background-color: var(--clr-secondary);
+}
+
+
+/* Stylingen fär avigationen i footern är densamma som i main-nav */

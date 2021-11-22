@@ -1,0 +1,17 @@
+/* ================================ FEATURES ================================ */
+
+
+/* Temporär styling för sektion */
+
+.features-wrapper {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.features {
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}

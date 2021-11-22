@@ -1,0 +1,66 @@
+/* ================================ GLOBAL CSS ================================ */
+
+body {
+    /* Styling för body */
+    color: var(--clr-txt-body);
+    font-family: var(--fnt-body);
+    font-weight: var(--wgt-main-regular);
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+
+
+/* Knappar */
+
+.btn {
+    /* Styling för huvudknappen */
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    font-family: var(--fnt-body);
+    font-weight: var(--wgt-main-medium);
+    font-size: 1.2em;
+    cursor: pointer;
+    border: 0.2rem solid transparent;
+}
+
+.btn--yellow {
+    /* styling för den gula knappen */
+    background-color: var(--clr-secondary);
+    color: #ffffff;
+    transition: color ease-in-out 0.2s, border ease-in-out 0.2s, background-color ease-in-out 0.2s;
+}
+
+.btn--yellow:hover {
+    /* hover för den gula knappen */
+    background-color: transparent;
+    color: var(--clr-secondary);
+    border: 0.2rem solid var(--clr-secondary);
+}
+
+.btn--white {
+    /* styling för den vita knappen */
+    background-color: transparent;
+    border: 0.2rem solid #ffffff;
+    color: #ffffff;
+    transition: color ease-in-out 0.2s, border ease-in-out 0.2s, background-color ease-in-out 0.2s;
+}
+
+.btn--white:hover {
+    /* hover för den vita knappen */
+    background-color: #ffffff;
+    border: 0.2rem solid #ffffff;
+    color: var(--clr-primary);
+}
+
+
+/* Animationer */
+
+@keyframes pulse-outline {
+    0% {
+        outline-offset: -1px;
+    }
+    100% {
+        outline-offset: 0.3rem;
+    }
+}

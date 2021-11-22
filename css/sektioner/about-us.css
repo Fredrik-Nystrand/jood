@@ -1,0 +1,17 @@
+/* ================================ ABOUT US ================================ */
+
+
+/* Temporär styling för sektion */
+
+.about-wrapper {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.about {
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}

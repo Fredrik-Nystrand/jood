@@ -1,0 +1,64 @@
+/* ================================ MEDIA QUERIES ================================ */
+
+
+/* Minimum skärm 768px */
+
+@media screen and (min-width: 48rem) {
+    /* Container */
+    .hero__content {
+        justify-content: center;
+    }
+    /* Visa bilden i hero */
+    .hero__image {
+        display: block;
+        width: 40%;
+        height: 100%;
+        transform: translateX(2rem);
+    }
+    /* Ändra justering och text i hero */
+    .hero__content {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+
+/* Minimum skärm 1024px */
+
+@media screen and (min-width: 64rem) {
+    /* Container */
+    .container {
+        max-width: calc(100% - 10rem);
+    }
+    /* Nav main */
+    .btn__download {
+        /* Visa download-knappen */
+        display: inline-block;
+    }
+    /* Justering av headern */
+    .header-hero-wrapper {
+        /* lägg till mer utrymme under hero */
+        margin-bottom: 10rem;
+    }
+    .header-hero-wrapper::before {
+        /* Byt bild */
+        background: url(../img/Head-BG-no-rot.svg) no-repeat center 0 / contain;
+        /* Justera position och skala */
+        transform: translateY(-60%) scale(1.8) rotate(-20deg);
+    }
+}
+
+
+/* Minimum skärm 1366 */
+
+@media screen and (min-width: 85.375rem) {
+    /* Container */
+    .container {
+        max-width: 75.375rem;
+        /* 1600px */
+    }
+    /* Ändra justering och text i hero */
+    .hero__content h1 {
+        font-size: 4rem;
+    }
+}

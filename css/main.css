@@ -1,0 +1,16 @@
+/* ================================ MAIN IMPORTS ================================ */
+
+@import "./reset.css";
+@import "./variables.css";
+@import "./style.css";
+@import "./sektioner/header.css";
+@import "./sektioner/hero.css";
+@import "./sektioner/about-us.css";
+@import "./sektioner/features.css";
+@import "./sektioner/screens.css";
+@import "./sektioner/stats.css";
+@import "./sektioner/download.css";
+@import "./sektioner/contact.css";
+@import "./sektioner/footer.css";
+@import "./helpers.css";
+@import "./media-queries.css";
