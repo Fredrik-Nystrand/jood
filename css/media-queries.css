@@ -20,6 +20,7 @@
         align-items: flex-start;
         text-align: left;
     }
+    
 }
 
 
@@ -46,6 +47,7 @@
         /* Justera position och skala */
         transform: translateY(-60%) scale(1.8) rotate(-20deg);
     }
+
 }
 
 
@@ -61,4 +63,5 @@
     .hero__content h1 {
         font-size: 4rem;
     }
+
 }
