@@ -20,6 +20,15 @@
         align-items: flex-start;
         text-align: left;
     }
+
+    .stats h3 {
+        font-size: 1.8rem;
+    }
+    
+    .stats p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }
 
 
@@ -45,6 +54,12 @@
         background: url(../img/Head-BG-no-rot.svg) no-repeat center 0 / contain;
         /* Justera position och skala */
         transform: translateY(-60%) scale(1.8) rotate(-20deg);
+    }
+
+    .list {
+        justify-content: space-around;
+        margin: 0;
+        width: 100%;
     }
 }
 
