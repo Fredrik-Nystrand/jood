@@ -11,10 +11,11 @@
     <title>Jood</title>
 </head>
 
-<body>
-    <header class="header-hero-wrapper">
-        <div class="header-hero">
-            <nav class="main-nav container pt-3 pb-3">
+<body id="body" class="no-scroll">
+    <div class="overlay"></div>
+    <div class="header-wrapper">
+        <header class="header">
+            <nav class="main-nav container pt-3" id="main-nav">
                 <a href="#" class="logo">
                     <img src="./img/logo.svg" alt="Jood Logo" />
                 </a>
@@ -26,8 +27,17 @@
                     <a href="#">Contact Us</a>
                     <button class="btn btn--yellow btn__download">Get this app</button>
                 </div>
+                <div class="btn-mobile-menu" id="btn-mobile-menu">
+                    <div class="btn-mobile-menu-icon"></div>
+                </div>
             </nav>
-            <section class="hero container">
+        </header>
+    </div>
+
+
+    <main>
+        <section class="hero-wrapper">
+            <div class="hero container">
                 <div class="hero__content">
                     <h1 class="pb-2">Creative Way to Showcase Your App</h1>
                     <p class="pb-3">
@@ -42,40 +52,39 @@
                     </div>
                 </div>
                 <img src="./img/Mobile.png" alt="hero image" class="hero__image" />
-            </section>
-        </div>
-    </header>
-
-    <section class="about-wrapper">
-        <div class="about container">
-            <h1>SEKTION: About Us</h1>
-        </div>
-    </section>
-    <section class="features-wrapper">
-        <div class="features container">
-            <h1>SEKTION: Features</h1>
-        </div>
-    </section>
-    <section class="screens-wrapper">
-        <div class="screens container">
-            <h1>SEKTION: Screens</h1>
-        </div>
-    </section>
-    <section class="stats-wrapper">
-        <div class="stats container">
-            <h1>SEKTION: Stats</h1>
-        </div>
-    </section>
-    <section class="download-wrapper">
-        <div class="download container">
-            <h1>SEKTION: Download</h1>
-        </div>
-    </section>
-    <section class="contact-wrapper">
-        <div class="contact container">
-            <h1>SEKTION: Contact</h1>
-        </div>
-    </section>
+            </div>
+        </section>
+        <section class="about-wrapper">
+            <div class="about container">
+                <h1>SEKTION: About Us</h1>
+            </div>
+        </section>
+        <section class="features-wrapper">
+            <div class="features container">
+                <h1>SEKTION: Features</h1>
+            </div>
+        </section>
+        <section class="screens-wrapper">
+            <div class="screens container">
+                <h1>SEKTION: Screens</h1>
+            </div>
+        </section>
+        <section class="stats-wrapper">
+            <div class="stats container">
+                <h1>SEKTION: Stats</h1>
+            </div>
+        </section>
+        <section class="download-wrapper">
+            <div class="download container">
+                <h1>SEKTION: Download</h1>
+            </div>
+        </section>
+        <section class="contact-wrapper">
+            <div class="contact container">
+                <h1>SEKTION: Contact</h1>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <a href="#" class="logo pb-2">
@@ -95,6 +104,7 @@
             <a href="#"><i class="fab fa-google-plus-g"></i></a>
         </div>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

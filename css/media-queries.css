@@ -8,6 +8,34 @@
     .hero__content {
         justify-content: center;
     }
+    /* Dölj hamburger-meny knappen */
+    .main-nav .btn-mobile-menu {
+        display: none;
+    }
+    /* Visa desktop menyn */
+    .main-nav .nav-links {
+        display: block;
+        position: unset;
+        visibility: visible;
+        transform: translateX(0%);
+        font-size: inherit;
+        height: unset;
+    }
+    .nav-links a {
+        /* Styla länkarna i navigationen */
+        margin-top: 0;
+        margin-left: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .main-nav .nav-links a:first-of-type {
+        /* Ta bort margin till vänster om första länken */
+        margin-left: 0;
+    }
+    .main-nav .nav-links a:last-of-type {
+        margin-right: 0;
+        /* Ta bort margin till höger om sista länken */
+    }
     /* Visa bilden i hero */
     .hero__image {
         display: block;
@@ -35,16 +63,26 @@
         /* Visa download-knappen */
         display: inline-block;
     }
-    /* Justering av headern */
-    .header-hero-wrapper {
+    /* Justering av hero */
+    .hero {
         /* lägg till mer utrymme under hero */
         margin-bottom: 10rem;
     }
-    .header-hero-wrapper::before {
+    body::before {
+        display: block;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
         /* Byt bild */
         background: url(../img/Head-BG-no-rot.svg) no-repeat center 0 / contain;
         /* Justera position och skala */
-        transform: translateY(-60%) scale(1.8) rotate(-20deg);
+        transform: translate(-50%, min(calc(-74rem + 50vw), -34rem)) scale(1) rotate(-20deg);
+        left: 50%;
+        width: 1913px;
+        height: 1192px;
+    }
+    .hero-wrapper::after {
+        display: none;
     }
 }
 

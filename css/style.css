@@ -7,6 +7,13 @@ body {
     font-weight: var(--wgt-main-regular);
     font-size: 1rem;
     overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    /* Här skapas och stylas bakgrundsbilden till headern och hero */
+    content: "";
+    display: none;
 }
 
 
@@ -51,6 +58,10 @@ body {
     background-color: #ffffff;
     border: 0.2rem solid #ffffff;
     color: var(--clr-primary);
+}
+
+main {
+    transition: transform ease-in-out .2s;
 }
 
 
