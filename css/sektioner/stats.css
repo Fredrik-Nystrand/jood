@@ -1,17 +1,47 @@
 /* ================================ STATS ================================ */
 
 
-/* Temporär styling för sektion */
+.head {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
 
-.stats-wrapper {
-    width: 100%;
-    margin-bottom: 5rem;
+.head h1 {
+    font-size: 1.5rem;
+    color: var(--clr-txt-title);
+}
+
+.head p {
+    color: var(--clr-txt-body);
+}
+
+
+.map {
+    background: url(../../img/map.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.list {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .stats {
-    background-color: rgb(224, 224, 224);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
+    margin-top: 2rem;
 }
+
+.stats h3 {
+    color: var(--clr-primary);
+    font-size: 1rem;
+}
+
+.stats p {
+    color: var(--clr-txt-title);
+    font-size: 0.8rem;
+    text-align: center;
+}
+/* Informations sida end */

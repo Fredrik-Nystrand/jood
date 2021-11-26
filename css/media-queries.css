@@ -24,10 +24,20 @@
         text-align: left;
     }
 
+
+    .stats h3 {
+        font-size: 1.8rem;
+    }
+    
+    .stats p {
+        font-size: 1.2rem;
+        text-align: center;
+  }
     /* About-us */
     .about-us-wrapper {
         display: flex;
         flex-direction: row;
+
     }
 }
 
@@ -58,6 +68,13 @@
         background: url(../img/Head-BG-no-rot.svg) no-repeat center 0 / contain;
         /* Justera position och skala */
         transform: translateY(-60%) scale(1.8) rotate(-20deg);
+    }
+
+
+    .list {
+        justify-content: space-around;
+        margin: 0;
+        width: 100%;
     }
 
     /* About-us */
@@ -108,6 +125,7 @@
         font-size: 0.875rem;
         padding: 0.4rem 2rem;
     }
+
 
 }
 
