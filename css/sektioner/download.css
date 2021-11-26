@@ -6,125 +6,122 @@
 /* .download-wrapper {
     width: 100%;
     margin-bottom: 5rem;
+ } */
+
+
+.d-flex {
+  display: flex;
 }
 
-.download {
-    background-color: rgb(224, 224, 224);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-} */
+.mt {
+  margin-top: 10px;
+}
 
-  .d-flex {
-    display: flex;
-  }
-  
-  .mt {
-    margin-top: 10px;
-  }
-  
-  .mb {
-    margin-bottom: 10px;
-  }
-  
-  .download-btn {
-    cursor: pointer;
-  }
-  
-  /* APPLICATIONS */
-  
-  .appstore {
-    background-color: #1487FD;
-    background-image: url(/pics/fff.svg);
-  }
-  
-  .appstore-content {
-    color: #fff;
-  }
-  
-  .appstore {
-    height: 570px;
-  }
-  
-  .appstore-text {
-    margin-top: 100px;
-  }
-  
-  .appstore-text h1 {
-    font-size: 50px;
-    width: 90%;
-    margin-bottom: 30px;
-  }
-  
-  #appstore-p {
-    line-height: 30px;
-    width: 75%;
-    margin-bottom: 40px;
-  }
-  
-  .btn-text {
-    margin-left: 25px;
-    text-align: left;
-  }
-  
-  .download-btn {
-    background-color: #fff;
-    width: 232px;
-    font-family: 'Roboto';
-    padding: 15px 25px;
-    border-radius: 12px;
-    border: none;
-    margin-right: 20px;
-    align-items: center;
-    border: 2px solid transparent;
-  }
-  
-  .download-btn p {
-    margin-bottom: 0;
-    font-size: 12px;
-    font-weight: 500;
-    color: #6B6B6B;
-  }
-  
-  .download-btn h4 {
-    font-size: 22px;
-    font-weight: 600;
-    color: #111111;
-  }
+.mb {
+  margin-bottom: 10px;
+}
 
-  .phones {
-    margin-top: 30px;
-  }
-    
-  .phone-one {
-    height: 90%;
-    margin-top: 100px;
-  }
-  .phone-two {
-    position: relative;
-    z-index: 2;
-    margin-left: -160px;
-  }
-  .phone-three {
-    height: 90%;
-    margin-top: 100px;
-    margin-left: -170px;
-  }
+.download-btn {
+  cursor: pointer;
+}
 
-  .download-btn:hover {
-    background-color: transparent;
-    border: 2px solid #fff;
-    transition: border ease-in-out 0.2s;
-  }
+/* APPLICATIONS */
 
- .download-btn:hover p {
-    color: #fff;
-    transition: color ease-in-out 0.2s;
-  }
- .download-btn:hover h4 {
-    color: #fff;
-    transition: color ease-in-out 0.2s;
-  }
+.appstore {
+  background-color: #1487FD;
+  background-image: url(/pics/fff.svg);
+}
 
-  /* APPLICATIONS END */
+.appstore-content {
+  color: #fff;
+}
+
+.appstore {
+  height: 570px;
+}
+
+.appstore-text {
+  margin-top: 100px;
+}
+
+.appstore-text h1 {
+  font-size: 30px;
+  width: 90%;
+  margin-bottom: 30px;
+  overflow-wrap: break-word;
+}
+
+#appstore-p {
+  line-height: 30px;
+  width: 75%;
+  margin-bottom: 40px;
+}
+
+.btn-text {
+  margin-left: 25px;
+  text-align: left;
+}
+
+.download-btn {
+  background-color: #fff;
+  width: 40%;
+  font-family: 'Roboto';
+  padding: 15px ;
+  border-radius: 12px;
+  border: none;
+  margin-right: 20px;
+  align-items: center;
+  border: 2px solid transparent;
+}
+
+.download-btn img {
+  margin-left: 5px;
+}
+
+.download-btn p {
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6B6B6B;
+}
+
+.download-btn h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.phones {
+  display: none;
+  margin-top: 30px;
+}
+  
+.phone-one {
+  height: 90%;
+  margin-top: 100px;
+}
+.phone-two {
+  position: relative;
+  z-index: 2;
+  margin-left: -160px;
+}
+.phone-three {
+  height: 90%;
+  margin-top: 100px;
+  margin-left: -170px;
+}
+
+.download-btn:hover {
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition: border ease-in-out 0.2s;
+}
+
+.download-btn:hover p {
+  color: #fff;
+  transition: color ease-in-out 0.2s;
+}
+.download-btn:hover h4 {
+  color: #fff;
+  transition: color ease-in-out 0.2s;
+}

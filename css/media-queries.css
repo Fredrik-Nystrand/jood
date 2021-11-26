@@ -20,7 +20,8 @@
         align-items: flex-start;
         text-align: left;
     }
-    
+
+
 }
 
 
@@ -47,9 +48,14 @@
         /* Justera position och skala */
         transform: translateY(-60%) scale(1.8) rotate(-20deg);
     }
+    .download-btn {
+        width: 29%;
+    }
+    .submit-btn {
+        width: 18%;
+    }
 
 }
-
 
 /* Minimum skärm 1366 */
 
@@ -64,4 +70,10 @@
         font-size: 4rem;
     }
 
+    .phones {
+        display: flex;
+    }
+    .appstore-text h1 {
+        font-size: 50px;
+    }
 }
