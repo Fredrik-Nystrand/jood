@@ -4,10 +4,12 @@
 /* Minimum skärm 768px */
 
 @media screen and (min-width: 48rem) {
+
     /* Container */
     .hero__content {
         justify-content: center;
     }
+  
     /* Dölj hamburger-meny knappen */
     .main-nav .btn-mobile-menu {
         display: none;
@@ -36,6 +38,7 @@
         margin-right: 0;
         /* Ta bort margin till höger om sista länken */
     }
+
     /* Visa bilden i hero */
     .hero__image {
         display: block;
@@ -43,10 +46,26 @@
         height: 100%;
         transform: translateX(2rem);
     }
+
     /* Ändra justering och text i hero */
     .hero__content {
         align-items: flex-start;
         text-align: left;
+    }
+
+    .stats h3 {
+        font-size: 1.8rem;
+    }
+    
+    .stats p {
+        font-size: 1.2rem;
+        text-align: center;
+  }
+    /* About-us */
+    .about-us-wrapper {
+        display: flex;
+        flex-direction: row;
+
     }
 }
 
@@ -54,15 +73,18 @@
 /* Minimum skärm 1024px */
 
 @media screen and (min-width: 64rem) {
+
     /* Container */
     .container {
         max-width: calc(100% - 10rem);
     }
+
     /* Nav main */
     .btn__download {
         /* Visa download-knappen */
         display: inline-block;
     }
+
     /* Justering av hero */
     .hero {
         /* lägg till mer utrymme under hero */
@@ -73,6 +95,14 @@
         background-size: cover;
         position: absolute;
         z-index: -1;
+
+    /* Justering av headern */
+    .header-hero-wrapper {
+        /* lägg till mer utrymme under hero */
+        margin-bottom: 10rem;
+    }
+
+    .header-hero-wrapper::before {
         /* Byt bild */
         background: url(../img/Head-BG-no-rot.svg) no-repeat center 0 / contain;
         /* Justera position och skala */
@@ -84,19 +114,119 @@
     .hero-wrapper::after {
         display: none;
     }
+
+    .download-btn {
+        width: 29%;
+    }
+    .submit-btn {
+        width: 18%;
+    }
+
+
+    .list {
+        justify-content: space-around;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* About-us */
+    .right-container {
+        flex: 1;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-container {
+        flex: 1;
+        display: flex;
+
+    }
+
+    .animation-blue-container,
+    .animation-yellow-container,
+    .cirkel1,
+    .cirkel2 {
+        display: none;
+    }
+
+    .iphone-container {
+        width: 60%;
+        left: 0;
+    }
+
+    .ec-container {
+        display: flex;
+    }
+
+    .right-container h2 {
+        margin-bottom: -1rem;
+        text-align: start;
+    }
+
+    .right-container .p-about-us {
+        line-height: 1.875rem;
+        margin-top: 1.875rem;
+        margin-bottom: 2.5rem;
+        max-width: 570px;
+        text-align: start;
+    }
+
+    .right-container button {
+        font-size: 0.875rem;
+        padding: 0.4rem 2rem;
+    }
+
+
 }
 
+}
 
 /* Minimum skärm 1366 */
 
 @media screen and (min-width: 85.375rem) {
+
     /* Container */
     .container {
         max-width: 75.375rem;
         /* 1600px */
     }
+
     /* Ändra justering och text i hero */
     .hero__content h1 {
         font-size: 4rem;
     }
+
+    .phones {
+        display: flex;
+    }
+    .appstore-text h1 {
+        font-size: 50px;
+    }
+    /* About-us */
+
+    .left-container {
+        flex: 1;
+        display: flex;
+    }
+
+    .animation-blue-container,
+    .animation-yellow-container,
+    .cirkel1,
+    .cirkel2 {
+        display: block;
+    }
+
+    .iphone-container {
+        width: 100%;
+        margin-top: 0;
+        top: 0;
+        left: 8.5rem;
+    }
+
+    .animation-container {
+        left: -10rem;
+    }
+
 }

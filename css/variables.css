@@ -1,6 +1,7 @@
 /* ================================ Variables ================================ */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;900&display=swap");
+
 :root {
     /* Colors */
     --clr-gray-100: #f8f8f8;
@@ -9,6 +10,8 @@
     --clr-txt-title: #333333;
     --clr-primary: #2baaec;
     --clr-secondary: #ffbb00;
+    --blue: #1487FD;
+    --yellow-light: #FFF5D9;
     /* Fonts */
     --fnt-body: "Roboto", sans-serif;
     --fnt-hero: "poppins", sans-serif;
