@@ -1,29 +1,19 @@
 /* ================================ HEADER ================================ */
 
-.header-hero-wrapper {
-    /* Denna wrapper inkluderar allt i headern och även hero
-     Detta görs för att bakgrunden ska ta upp hela höjden.*/
-    position: relative;
+.header-wrapper {
+    /* Denna wrapper inkluderar allt i headern */
     display: flex;
     justify-content: center;
-    height: 100%;
-    margin-bottom: 5rem;
 }
 
-.header-hero-wrapper::before {
-    /* Här skapas och stylas bakgrundsbilden till headern och hero */
-    content: "";
-    background: url(../../img/Head-BG-square-no-rot.svg) no-repeat;
-    background-size: cover;
-    position: absolute;
-    z-index: -1;
+.header {
+    /* Ser till att headern sträcker sig 100% av containerns bredd */
     width: 100%;
-    height: 100%;
 }
 
-.header-hero {
-    /* Ser till att hero sträcker sig 100% av containerns bredd */
-    width: 100%;
+.logo {
+    position: relative;
+    z-index: 11;
 }
 
 .main-nav {
@@ -37,24 +27,31 @@
     font-family: var(--fnt-body);
 }
 
+.main-nav .nav-links {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 11;
+    transform: translateX(100%);
+    transition: all ease-in-out 0.2s;
+    font-size: 3rem;
+}
+
 .nav-links a {
     /* Styla länkarna i navigationen */
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 1rem;
     position: relative;
     text-decoration: none;
     color: #ffffff;
     transition: color ease-in-out 0.15s;
-}
-
-.main-nav .nav-links a:first-of-type {
-    /* Ta bort margin till vänster om första länken */
-    margin-left: 0;
-}
-
-.main-nav .nav-links a:last-of-type {
-    margin-right: 0;
-    /* Ta bort margin till höger om sista länken */
 }
 
 .nav-links a.active {
@@ -102,4 +99,126 @@
     /* Dölj download knappen på mindre skärmar */
     display: none;
     margin-left: 2rem;
+}
+
+
+/* =============== NAV MOBILE BUTTON ================ */
+
+.main-nav .btn-mobile-menu {
+    /* wrapper till hamburger-menyn */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.082);
+    color: #ffffff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    transition: background-color ease-in-out 0.2s;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.main-nav .btn-mobile-menu:hover {
+    /* Ändra färg vid hover */
+    background-color: var(--clr-secondary);
+}
+
+.main-nav .btn-mobile-menu-icon {
+    /* Rita mittenstrecket för hamburger-ikonen */
+    background: #ffffff;
+    height: .2rem;
+    width: 1.5rem;
+    border-radius: 1rem;
+    transition: all ease-in-out 0.2s;
+    position: relative;
+}
+
+.main-nav .btn-mobile-menu-icon::before {
+    /* Rita övre strecket för hamburger-ikonen */
+    content: '';
+    background: #ffffff;
+    height: .2rem;
+    width: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: .4rem;
+    transition: all ease-in-out 0.2s;
+}
+
+.main-nav .btn-mobile-menu-icon::after {
+    /* Rita nedre strecket för hamburger-ikonen */
+    content: '';
+    background: #ffffff;
+    height: .2rem;
+    width: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    top: .4rem;
+    transition: all ease-in-out 0.2s;
+}
+
+body.mobile-menu-open .main-nav .btn-mobile-menu-icon {
+    /* Dölj mitten sträcket när menyn är aktiverad */
+    background: transparent;
+    transform: translateY(0.1rem);
+}
+
+body.mobile-menu-open .main-nav .btn-mobile-menu-icon::before {
+    /* Rotera övre strecket för att forma ett kryss med undre strecket*/
+    transform: rotateZ(-45deg) translate(-0.25rem, 0.24rem);
+}
+
+body.mobile-menu-open .main-nav .btn-mobile-menu-icon::after {
+    /* Rotera nedre sträcket för att forma ett kryss med övre strecket */
+    transform: rotateZ(45deg) translate(-0.3rem, -0.3rem);
+}
+
+
+/* =============== NAV MOBILE MENU ================ */
+
+body.mobile-menu-open .header-wrapper {
+    position: relative;
+}
+
+body.mobile-menu-open .main-nav .nav-links {
+    transform: translateX(0%);
+    visibility: visible;
+}
+
+.overlay {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+body::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(20, 54, 111);
+    background: linear-gradient(45deg, rgba(20, 54, 111, 1) 0%, rgba(43, 170, 236, 1) 100%);
+    z-index: 10;
+    opacity: 1;
+    transform: translateX(100%);
+    transition: transform ease-in-out 0.2s;
+}
+
+body.mobile-menu-open::after {
+    transform: translateX(0%);
+}
+
+body.mobile-menu-open {
+    overflow: hidden;
+}
+
+body.mobile-menu-open .nav-links a::before {
+    display: none;
+}
+
+body.mobile-menu-open main {
+    transform: translateX(-100%);
 }
