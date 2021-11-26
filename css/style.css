@@ -60,7 +60,30 @@ body {
     0% {
         outline-offset: -1px;
     }
+
     100% {
         outline-offset: 0.3rem;
+    }
+}
+
+@keyframes circle-yellow {
+    0% {
+        transform: rotate(360deg) translate(278.5px) rotate(-360deg);
+
+    }
+
+    100% {
+        transform: rotate(0deg) translate(278.5px) rotate(0deg);
+    }
+}
+
+@keyframes circle-blue {
+    0% {
+        transform: rotate(0deg) translate(278.5px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(278.5px) rotate(-360deg);
     }
 }
