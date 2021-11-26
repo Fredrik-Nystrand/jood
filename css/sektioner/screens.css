@@ -1,17 +1,61 @@
 /* ================================ SCREENS ================================ */
 
+/* header start casper */
+.head {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
 
-/* Temporär styling för sektion */
+.head h1 {
+    font-size: 1.5rem;
+    color: var(--clr-txt-title);
+}
 
-.screens-wrapper {
+.head p {
+    color: var(--clr-txt-body);
+}
+
+/* Header end*/
+
+/* Carousel start Casper*/
+
+.swiper {
     width: 100%;
-    margin-bottom: 5rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+  
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+}
+  
+.swiper-slide img {
+    margin: auto;
+    padding: 1rem;
+    display: block;
+    width: 220px;
+    height: 520px;
+    transition: transform 100ms ease;
+}
+  
+.active-slide img {
+    transform: scale(1.1);
 }
 
-.screens {
-    background-color: rgb(224, 224, 224);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 800px;
+.swiper-button-next {
+    color: var(--clr-primary);
 }
+
+.swiper-button-prev {
+    color: var(--clr-primary);
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: var(--text-body);
+    color: var(--clr-primary);
+    border-radius: 5px;
+}
+/* Carousel end */

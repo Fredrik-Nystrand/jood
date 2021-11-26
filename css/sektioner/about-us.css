@@ -1,17 +1,240 @@
 /* ================================ ABOUT US ================================ */
 
 
-/* Temporär styling för sektion */
 
-.about-wrapper {
-    width: 100%;
+
+
+
+
+/* ---------Section-about-us---------- */
+
+.ec-container {
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+    margin-top: 21rem;
+}
+
+.about-us-container {
+    display: flex;
+
+}
+
+/* -------------Left-container---------------- */
+
+.left-container {
+    flex: 1;
+    display: none;
+    position: relative;
+}
+
+.animation-container {
+    position: absolute;
+}
+
+.iphone-container {
+    position: absolute;
+
+    z-index: 10;
+}
+
+.cirkel-container {
+    width: 557px;
+
+    height: 100%;
+}
+
+.cirkel-container .cirkel1 {
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    position: absolute;
+    border-radius: 50%;
+    height: 557px;
+    width: 557px;
+    margin: auto;
+}
+
+.cirkel-container .cirkel2 {
+    position: absolute;
+
+    top: 90px;
+    left: 16%;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    border-radius: 50%;
+    height: 381px;
+    width: 381px;
+}
+
+
+.animation-yellow-container {
+    height: 47px;
+    width: 47px;
+    position: absolute;
+    overflow: hidden;
+    margin: auto;
+    top: 255px;
+    left: 255px;
+    animation: circle-yellow 6s linear infinite;
+}
+
+
+.animation-yellow-container .cirkel1 {
+    position: relative;
+    top: 0;
+    height: 47px;
+    width: 47px;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    border-radius: 50%;
+}
+
+.animation-yellow-container .cirkel2 {
+    position: relative;
+    top: -75%;
+    left: 25%;
+    height: 24px;
+    width: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    border-radius: 50%;
+}
+
+.animation-yellow-container .cirkel3 {
+    position: relative;
+    top: -111%;
+    left: 40%;
+    height: 10px;
+    width: 10px;
+    background: var(--clr-secondary);
+    border-radius: 50%;
+
+}
+
+.animation-blue-container {
+    height: 47px;
+    width: 47px;
+    position: absolute;
+    overflow: hidden;
+    margin: auto;
+    top: 255px;
+    left: 255px;
+    animation: circle-blue 7s linear infinite;
+}
+
+
+.animation-blue-container .cirkel1 {
+    position: relative;
+    top: 0;
+    height: 47px;
+    width: 47px;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    border-radius: 50%;
+}
+
+.animation-blue-container .cirkel2 {
+    position: relative;
+    top: -75%;
+    left: 25%;
+    height: 24px;
+    width: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    border-radius: 50%;
+}
+
+.animation-blue-container .cirkel3 {
+    position: relative;
+    top: -111%;
+    left: 40%;
+    height: 10px;
+    width: 10px;
+    background: var(--clr-primary);
+    border-radius: 50%;
+
+}
+
+
+/* ------------------Right-container--------------- */
+
+.right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 5rem;
 }
 
-.about {
-    background-color: rgb(224, 224, 224);
+.right-container button {
+    font-size: 0.875rem;
+    padding: 0.4rem 6rem;
+    background-color: var(--yellow-light);
+    color: var(--clr-secondary);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.right-container button:hover {
+    background-color: white;
+    border: 2px solid var(--clr-secondary);
+
+}
+
+.right-container h2 {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    color: var(--clr-txt-title);
+}
+
+.right-container .p-about-us {
+    line-height: 1.875rem;
+    margin-top: 1.875rem;
+    margin-bottom: 2.5rem;
+    max-width: 570px;
+    text-align: center;
+}
+
+.about-us-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-wrapper p {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.about-us-wrapper h4 {
+    font-size: 1.375rem;
+}
+
+.google-container,
+.appStore-container {
+    background: var(--clr-gray-100);
+    display: flex;
+    align-items: center;
+    width: 238px;
+    padding: 0.85rem 1.5rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.google-container:hover {
+    background: #e6e6e6;
+    ;
+}
+
+.appStore-container:hover {
+    background: #e6e6e6;
+
+}
+
+.img-container {
+    margin-right: 1.375rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 800px;
+
+    height: 31px;
 }
