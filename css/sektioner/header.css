@@ -204,11 +204,13 @@ body::after {
     z-index: 10;
     opacity: 1;
     transform: translateX(100%);
-    transition: transform ease-in-out 0.2s;
+    transition: transform ease-in-out 0.2s, visibility ease-in-out 0.2s;
+    visibility: hidden;
 }
 
 body.mobile-menu-open::after {
     transform: translateX(0%);
+    visibility: visible;
 }
 
 body.mobile-menu-open {
