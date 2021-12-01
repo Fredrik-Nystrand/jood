@@ -189,4 +189,12 @@
     .animation-container {
         left: -10rem;
     }
+
+    .contact {
+        padding-top: 100px;
+    }
+
+    .contact-text p {
+        width: 47%;
+    }
 }
