@@ -3,125 +3,143 @@
 
 /* Temporär styling för sektion */
 
+
 /* .download-wrapper {
     width: 100%;
     margin-bottom: 5rem;
  } */
 
-
 .d-flex {
-  display: flex;
+    display: flex;
 }
 
 .mt {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .mb {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .download-btn {
-  cursor: pointer;
+    cursor: pointer;
 }
+
 
 /* APPLICATIONS */
 
 .appstore {
-  background-color: #1487FD;
-  background-image: url(/pics/fff.svg);
+    background-color: #1487FD;
+    background-image: url(/pics/fff.svg);
+    overflow: hidden;
 }
 
 .appstore-content {
-  color: #fff;
+    color: #fff;
+    justify-content: center;
 }
 
 .appstore {
-  height: 570px;
+    padding-block: 3rem;
 }
 
 .appstore-text {
-  margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .appstore-text h1 {
-  font-size: 30px;
-  width: 90%;
-  margin-bottom: 30px;
-  overflow-wrap: break-word;
+    font-size: 30px;
+    margin-bottom: 30px;
+    max-width: 27rem;
 }
 
 #appstore-p {
-  line-height: 30px;
-  width: 75%;
-  margin-bottom: 40px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    max-width: 27rem;
+}
+
+.app-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .btn-text {
-  margin-left: 25px;
-  text-align: left;
+    margin-left: 25px;
+    text-align: left;
 }
 
 .download-btn {
-  background-color: #fff;
-  width: 40%;
-  font-family: 'Roboto';
-  padding: 15px ;
-  border-radius: 12px;
-  border: none;
-  margin-right: 20px;
-  align-items: center;
-  border: 2px solid transparent;
+    background-color: #fff;
+    font-family: 'Roboto';
+    padding: 1rem 1rem;
+    border-radius: 12px;
+    border: none;
+    align-items: center;
+    border: 2px solid transparent;
+    width: 14.875rem;
+    justify-content: center;
 }
 
 .download-btn img {
-  margin-left: 5px;
+    margin-left: 5px;
 }
 
 .download-btn p {
-  margin-bottom: 0;
-  font-size: 12px;
-  font-weight: 500;
-  color: #6B6B6B;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #6B6B6B;
 }
 
 .download-btn h4 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #111111;
+    font-size: 22px;
+    font-weight: 600;
+    color: #111111;
 }
 
 .phones {
-  display: none;
-  margin-top: 30px;
-}
-  
-.phone-one {
-  height: 90%;
-  margin-top: 100px;
-}
-.phone-two {
-  position: relative;
-  z-index: 2;
-  margin-left: -160px;
-}
-.phone-three {
-  height: 90%;
-  margin-top: 100px;
-  margin-left: -170px;
+    display: none;
+    margin-top: 30px;
 }
 
+
+/* .phone-one {
+    height: 90%;
+    margin-top: 100px;
+}
+
+.phone-two {
+    position: relative;
+    z-index: 2;
+    margin-left: -160px;
+}
+
+.phone-three {
+    height: 90%;
+    margin-top: 100px;
+    margin-left: -170px;
+} */
+
 .download-btn:hover {
-  background-color: transparent;
-  border: 2px solid #fff;
-  transition: border ease-in-out 0.2s;
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: border ease-in-out 0.2s;
 }
 
 .download-btn:hover p {
-  color: #fff;
-  transition: color ease-in-out 0.2s;
+    color: #fff;
+    transition: color ease-in-out 0.2s;
 }
+
 .download-btn:hover h4 {
-  color: #fff;
-  transition: color ease-in-out 0.2s;
+    color: #fff;
+    transition: color ease-in-out 0.2s;
 }

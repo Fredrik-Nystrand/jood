@@ -1,6 +1,5 @@
 /* ================================ STATS ================================ */
 
-
 .head {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -16,18 +15,18 @@
     color: var(--clr-txt-body);
 }
 
-
 .map {
-    background: url(../../img/map.svg);
+    background: url('../../img/map.svg');
     background-repeat: no-repeat;
     background-position-x: center;
 }
 
 .list {
-    width: 80%;
+    max-width: 100%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .stats {
@@ -35,13 +34,18 @@
 }
 
 .stats h3 {
+    font-size: 1.8rem;
     color: var(--clr-primary);
-    font-size: 1rem;
 }
 
 .stats p {
-    color: var(--clr-txt-title);
-    font-size: 0.8rem;
-    text-align: center;
+    color: var(--clr-txt-body);
+    font-size: 1.2rem;
 }
+
+.stats:nth-child(even) {
+    text-align: right;
+}
+
+
 /* Informations sida end */

@@ -14,7 +14,8 @@ btnMobileMenu.addEventListener('click', () => {
 
     }
 
-})
+});
+
 
 /* Stäng menyn om skärmstorleken ökar över breakpointen */
 window.addEventListener('resize', () => {

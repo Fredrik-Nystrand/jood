@@ -48,16 +48,13 @@
         align-items: flex-start;
         text-align: left;
     }
-    .stats h3 {
-        font-size: 1.8rem;
-    }
-    .stats p {
-        font-size: 1.2rem;
-        text-align: center;
-    }
     /* About-us */
     .about-us-wrapper {
         display: flex;
+        flex-direction: row;
+    }
+    /* Download */
+    .app-buttons {
         flex-direction: row;
     }
 }
@@ -97,17 +94,6 @@
     .hero-wrapper::after {
         display: none;
     }
-    .download-btn {
-        width: 29%;
-    }
-    .submit-btn {
-        width: 18%;
-    }
-    .list {
-        justify-content: space-around;
-        margin: 0;
-        width: 100%;
-    }
     /* About-us */
     .right-container {
         flex: 1;
@@ -144,9 +130,45 @@
         max-width: 570px;
         text-align: start;
     }
-    .right-container button {
-        font-size: 0.875rem;
-        padding: 0.4rem 2rem;
+    /* Download */
+    .appstore {
+        padding-block: 6rem;
+    }
+    .appstore-content {
+        position: relative;
+        justify-content: flex-start;
+    }
+    .appstore-text {
+        text-align: left;
+        align-items: flex-start;
+    }
+    .app-buttons {
+        justify-content: flex-start;
+    }
+    .phones {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: -4rem;
+        right: -12rem;
+    }
+    .phones img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .phone-one {
+        z-index: 1;
+    }
+    .phone-two {
+        transform: scale(.9) translate(-50%, 2rem);
+    }
+    .phone-three {
+        transform: scale(.9) translate(50%, 2rem);
+    }
+    /* Contact */
+    .contact-form {
+        flex-wrap: nowrap;
     }
 }
 
@@ -162,12 +184,6 @@
     /* Ändra justering och text i hero */
     .hero__content h1 {
         font-size: 4rem;
-    }
-    .phones {
-        display: flex;
-    }
-    .appstore-text h1 {
-        font-size: 50px;
     }
     /* About-us */
     .left-container {
@@ -189,12 +205,16 @@
     .animation-container {
         left: -10rem;
     }
-
-    .contact {
-        padding-top: 100px;
+    /* Features */
+    .right-container-k {
+        display: block;
     }
-
-    .contact-text p {
-        width: 47%;
+    /* Download */
+    .appstore-text h1 {
+        font-size: 50px;
+        max-width: 44rem;
+    }
+    .phones {
+        right: 0;
     }
 }
