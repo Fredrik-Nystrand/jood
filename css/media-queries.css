@@ -73,6 +73,9 @@
         display: inline-block;
     }
     /* Justering av hero */
+    .hero-wrapper {
+        padding-bottom: 3rem;
+    }
     .hero {
         /* lägg till mer utrymme under hero */
         margin-bottom: 10rem;
@@ -90,7 +93,6 @@
         position: absolute;
         z-index: -1;
     }
-    .header-hero-wrapper::before {}
     .hero-wrapper::after {
         display: none;
     }
@@ -129,6 +131,14 @@
         margin-bottom: 2.5rem;
         max-width: 570px;
         text-align: start;
+    }
+    /* Stats */
+    .list {
+        grid-template-columns: auto auto auto auto;
+    }
+    .stats,
+    .stats:nth-child(even) {
+        text-align: center;
     }
     /* Download */
     .appstore {
@@ -208,6 +218,19 @@
     /* Features */
     .right-container-k {
         display: block;
+    }
+    .left-container-content {
+        align-items: flex-start;
+    }
+    .left-container-k button {
+        align-self: flex-start;
+    }
+    .left-container-k h2,
+    .left-container-k p {
+        text-align: left;
+    }
+    .features-wrapper {
+        flex-wrap: nowrap;
     }
     /* Download */
     .appstore-text h1 {

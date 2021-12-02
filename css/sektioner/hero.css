@@ -2,10 +2,8 @@
 
 .hero-wrapper {
     /* Yttre wrapper för hero */
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    margin-bottom: 5rem;
     position: relative;
+    padding-bottom: 7rem;
 }
 
 .hero-wrapper::after {
@@ -61,11 +59,9 @@
 .hero-cta {
     /* Wrapper för knappar & länkar i hero */
     display: flex;
-}
-
-.hero-cta button {
-    /* Lägg till margin till höger om första knappen i hero */
-    margin-right: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .hero-cta .watch-video {

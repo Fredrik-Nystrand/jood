@@ -6,7 +6,6 @@
 /* ---------Section-Features---------- */
 
 .features {
-    margin-top: 5rem;
     background-color: rgba(245, 245, 245, 0.308);
     padding: 5rem 0;
     position: relative;
@@ -124,6 +123,7 @@
     margin-top: 3.5rem;
     position: relative;
     display: none;
+    transform: translateX(8rem);
 }
 
 .iphone-container {
@@ -186,5 +186,5 @@
     border-radius: 50%;
     position: absolute;
     top: 2rem;
-    right: -5rem;
+    right: 3rem;
 }

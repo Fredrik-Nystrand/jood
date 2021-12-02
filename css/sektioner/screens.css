@@ -1,6 +1,8 @@
 /* ================================ SCREENS ================================ */
 
+
 /* header start casper */
+
 .head {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -16,22 +18,22 @@
     color: var(--clr-txt-body);
 }
 
+
 /* Header end*/
+
 
 /* Carousel start Casper*/
 
 .swiper {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
-  
+
 .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
 }
-  
+
 .swiper-slide img {
     margin: auto;
     padding: 1rem;
@@ -40,7 +42,7 @@
     height: 520px;
     transition: transform 100ms ease;
 }
-  
+
 .active-slide img {
     transform: scale(1.1);
 }
@@ -53,9 +55,12 @@
     color: var(--clr-primary);
 }
 
-.swiper-button-next:hover, .swiper-button-prev:hover {
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
     background-color: var(--text-body);
     color: var(--clr-primary);
     border-radius: 5px;
 }
+
+
 /* Carousel end */

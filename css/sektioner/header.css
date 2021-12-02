@@ -177,8 +177,7 @@ body.mobile-menu-open .main-nav .btn-mobile-menu-icon::after {
 
 /* =============== NAV MOBILE MENU ================ */
 
-
-/* body.mobile-menu-open .header-wrapper {
+body.mobile-menu-open .header-wrapper {
     position: relative;
 }
 
@@ -186,10 +185,8 @@ body.mobile-menu-open .main-nav .nav-links {
     transform: translateX(0%);
     visibility: visible;
 }
- */
 
-
-/* body.mobile-menu-open::after {
+body::after {
     content: '';
     display: block;
     position: absolute;
@@ -204,10 +201,9 @@ body.mobile-menu-open .main-nav .nav-links {
     transform: translateX(100%);
     transition: transform ease-in-out 0.2s, visibility ease-in-out 0.2s;
     visibility: hidden;
-} */
+}
 
-
-/* body.mobile-menu-open::after {
+body.mobile-menu-open::after {
     transform: translateX(0%);
     visibility: visible;
 }
@@ -222,4 +218,4 @@ body.mobile-menu-open .nav-links a::before {
 
 body.mobile-menu-open main {
     transform: translateX(-100%);
-} */
+}

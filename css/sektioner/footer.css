@@ -43,5 +43,11 @@ footer .social-links a:hover {
     background-color: var(--clr-secondary);
 }
 
+footer .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 /* Stylingen fär avigationen i footern är densamma som i main-nav */

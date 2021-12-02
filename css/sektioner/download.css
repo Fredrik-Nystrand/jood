@@ -59,7 +59,7 @@
 #appstore-p {
     line-height: 30px;
     margin-bottom: 40px;
-    max-width: 27rem;
+    max-width: 37rem;
 }
 
 .app-buttons {
@@ -85,7 +85,7 @@
     align-items: center;
     border: 2px solid transparent;
     width: 14.875rem;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .download-btn img {
@@ -101,7 +101,7 @@
 
 .download-btn h4 {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
     color: #111111;
 }
 
@@ -109,24 +109,6 @@
     display: none;
     margin-top: 30px;
 }
-
-
-/* .phone-one {
-    height: 90%;
-    margin-top: 100px;
-}
-
-.phone-two {
-    position: relative;
-    z-index: 2;
-    margin-left: -160px;
-}
-
-.phone-three {
-    height: 90%;
-    margin-top: 100px;
-    margin-left: -170px;
-} */
 
 .download-btn:hover {
     background-color: transparent;
