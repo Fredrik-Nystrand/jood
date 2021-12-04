@@ -4,16 +4,15 @@
 /* Minimum skärm 768px */
 
 @media screen and (min-width: 48rem) {
-    /* Container */
-    .hero__content {
-        justify-content: center;
-    }
-    /* Dölj hamburger-meny knappen */
+    /* ======== NAV ======= */
+    /* AV: Fredrik Nystrand */
+    /* ==================== */
     .main-nav .btn-mobile-menu {
+        /* Dölj hamburger-meny knappen */
         display: none;
     }
-    /* Visa desktop menyn */
     .main-nav .nav-links {
+        /* Visa desktop menyn */
         display: block;
         position: unset;
         visibility: visible;
@@ -36,24 +35,39 @@
         margin-right: 0;
         /* Ta bort margin till höger om sista länken */
     }
-    /* Visa bilden i hero */
+    /* ======= HERO ======= */
+    /* AV: Fredrik Nystrand */
+    /* ==================== */
     .hero__image {
         display: block;
         width: 40%;
         height: 100%;
         transform: translateX(2rem);
     }
-    /* Ändra justering och text i hero */
+    .hero__image--one {
+        top: 0;
+        right: -2rem;
+    }
+    .hero__image--two {
+        top: 6rem;
+        right: 8rem;
+    }
     .hero__content {
+        /* Ändra justering och text i hero */
+        justify-content: center;
         align-items: flex-start;
         text-align: left;
     }
-    /* About-us */
+    /* ==== ABOUT ==== */
+    /*  Av: KENT POLI  */
+    /* =============== */
     .about-us-wrapper {
         display: flex;
         flex-direction: row;
     }
-    /* Download */
+    /* ==== DOWNLOAD ==== */
+    /*   Av: Tuan Dang    */
+    /* ================== */
     .app-buttons {
         flex-direction: row;
     }
@@ -67,13 +81,18 @@
     .container {
         max-width: calc(100% - 10rem);
     }
-    /* Nav main */
+    /* ======== NAV ======= */
+    /* AV: Fredrik Nystrand */
+    /* ==================== */
     .btn__download {
         /* Visa download-knappen */
         display: inline-block;
     }
-    /* Justering av hero */
+    /* ======= HERO ======= */
+    /* AV: Fredrik Nystrand */
+    /* ==================== */
     .hero-wrapper {
+        /* Justering av hero */
         padding-bottom: 3rem;
     }
     .hero {
@@ -81,7 +100,7 @@
         margin-bottom: 10rem;
     }
     body::before {
-        /* Byt bild */
+        /* Byt bakgrunds-bild */
         background: url(../img/Head-BG-no-rot.svg) no-repeat center 0 / contain;
         /* Justera position och skala */
         transform: translate(-50%, min(calc(-74rem + 50vw), -34rem)) scale(1) rotate(-20deg);
@@ -96,7 +115,9 @@
     .hero-wrapper::after {
         display: none;
     }
-    /* About-us */
+    /* ==== ABOUT ==== */
+    /*  Av: KENT POLI  */
+    /* =============== */
     .right-container {
         flex: 1;
         margin-top: 3rem;
@@ -132,7 +153,15 @@
         max-width: 570px;
         text-align: start;
     }
-    /* Stats */
+    /* ======= SCREENS ======= */
+    /*  Av: Casper Bjarnetoft  */
+    /* ======================= */
+    .swiper {
+        overflow: hidden;
+    }
+    /* ======== STATS ======== */
+    /*  Av: Casper Bjarnetoft  */
+    /* ======================= */
     .list {
         grid-template-columns: auto auto auto auto;
     }
@@ -140,7 +169,9 @@
     .stats:nth-child(even) {
         text-align: center;
     }
-    /* Download */
+    /* ==== DOWNLOAD ==== */
+    /*   Av: Tuan Dang    */
+    /* ================== */
     .appstore {
         padding-block: 6rem;
     }
@@ -176,7 +207,9 @@
     .phone-three {
         transform: scale(.9) translate(50%, 2rem);
     }
-    /* Contact */
+    /* ===== CONTACT ==== */
+    /*   Av: Tuan Dang    */
+    /* ================== */
     .contact-form {
         flex-wrap: nowrap;
     }
@@ -191,11 +224,16 @@
         max-width: 75.375rem;
         /* 1600px */
     }
-    /* Ändra justering och text i hero */
+    /* ======= HERO ======= */
+    /* AV: Fredrik Nystrand */
+    /* ==================== */
     .hero__content h1 {
+        /* Ändra justering och text i hero */
         font-size: 4rem;
     }
-    /* About-us */
+    /* ==== ABOUT ==== */
+    /*  Av: KENT POLI  */
+    /* =============== */
     .left-container {
         flex: 1;
         display: flex;
@@ -215,7 +253,9 @@
     .animation-container {
         left: -10rem;
     }
-    /* Features */
+    /* ==== FEATURES ==== */
+    /*    Av: KENT POLI   */
+    /* ================== */
     .right-container-k {
         display: block;
     }
@@ -232,7 +272,9 @@
     .features-wrapper {
         flex-wrap: nowrap;
     }
-    /* Download */
+    /* ==== DOWNLOAD ==== */
+    /*   Av: Tuan Dang    */
+    /* ================== */
     .appstore-text h1 {
         font-size: 50px;
         max-width: 44rem;

@@ -1,7 +1,9 @@
-/* ================================ SCREENS ================================ */
+/* ================================ SCREENS ================================ 
+ * Kodad av Casper Bjarnetoft
+ */
 
 
-/* header start casper */
+/* header start */
 
 .head {
     margin-top: 2rem;
@@ -19,13 +21,14 @@
 }
 
 
-/* Header end*/
+/* Header end */
 
 
-/* Carousel start Casper*/
+/* Carousel start */
 
 .swiper {
     width: 100%;
+    overflow: visible;
 }
 
 .swiper-slide {

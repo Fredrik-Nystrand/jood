@@ -1,13 +1,15 @@
-/* ================================ HEADER ================================ */
+/* ================================ HEADER ================================ 
+ * Kodad av Fredrik Nystrand
+ */
 
 .header-wrapper {
-    /* Denna wrapper inkluderar allt i headern */
+    /* Wrapper för hela headern */
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
-.header {
-    /* Ser till att headern sträcker sig 100% av containerns bredd */
+header {
     width: 100%;
 }
 
@@ -28,6 +30,7 @@
 }
 
 .main-nav .nav-links {
+    /* Styla elementet som håller länkarna i nav för mobil */
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -142,7 +145,7 @@
     width: 100%;
     border-radius: 1rem;
     position: absolute;
-    bottom: .4rem;
+    bottom: .5rem;
     transition: all ease-in-out 0.2s;
 }
 
@@ -154,7 +157,7 @@
     width: 100%;
     border-radius: 1rem;
     position: absolute;
-    top: .4rem;
+    top: 0.5rem;
     transition: all ease-in-out 0.2s;
 }
 
@@ -166,12 +169,12 @@ body.mobile-menu-open .main-nav .btn-mobile-menu-icon {
 
 body.mobile-menu-open .main-nav .btn-mobile-menu-icon::before {
     /* Rotera övre strecket för att forma ett kryss med undre strecket*/
-    transform: rotateZ(-45deg) translate(-0.25rem, 0.24rem);
+    transform: rotateZ(-45deg) translate(-0.25rem, 0.3rem);
 }
 
 body.mobile-menu-open .main-nav .btn-mobile-menu-icon::after {
     /* Rotera nedre sträcket för att forma ett kryss med övre strecket */
-    transform: rotateZ(45deg) translate(-0.3rem, -0.3rem);
+    transform: rotateZ(45deg) translate(-0.35rem, -0.5rem);
 }
 
 
@@ -187,6 +190,9 @@ body.mobile-menu-open .main-nav .nav-links {
 }
 
 body::after {
+    /* Skapa bakgrunden för mobilmenyn och positionera den utanför skärmen
+     * tills att den aktiveras
+     */
     content: '';
     display: block;
     position: absolute;
@@ -204,18 +210,24 @@ body::after {
 }
 
 body.mobile-menu-open::after {
+    /* Flytta bakgrunden till skärmen vid aktivering */
     transform: translateX(0%);
     visibility: visible;
 }
 
 body.mobile-menu-open {
+    /* Dölj allt utanför skärmen när mobilmenyn är öppen för att förhindra
+     * användaren från att kunna skrolla i bakgrunden
+     */
     overflow: hidden;
 }
 
 body.mobile-menu-open .nav-links a::before {
+    /* Dölj understräcken när menyn visas i mobilläge */
     display: none;
 }
 
 body.mobile-menu-open main {
+    /* Animera main åt vänster när mobilmenyn animeras in */
     transform: translateX(-100%);
 }

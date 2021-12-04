@@ -1,4 +1,6 @@
-/* ================================ HERO ================================ */
+/* ================================ HERO ================================ 
+ * Kodad av Fredrik Nystrand
+ */
 
 .hero-wrapper {
     /* Yttre wrapper för hero */
@@ -7,6 +9,7 @@
 }
 
 .hero-wrapper::after {
+    /* Skapa och positionera bakgrunden för mindre skärmar */
     content: '';
     background: url(../../img/Head-BG-square-no-rot.svg) no-repeat;
     background-size: cover;

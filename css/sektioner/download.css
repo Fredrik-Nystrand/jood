@@ -1,13 +1,6 @@
-/* ================================ DOWNLOAD ================================ */
-
-
-/* Temporär styling för sektion */
-
-
-/* .download-wrapper {
-    width: 100%;
-    margin-bottom: 5rem;
- } */
+/* ================================ DOWNLOAD ================================ 
+ * Kodad av Tuan Dang
+ */
 
 .d-flex {
     display: flex;
@@ -29,7 +22,7 @@
 /* APPLICATIONS */
 
 .appstore {
-    background-color: #1487FD;
+    background-color: var(--clr-primary);
     background-image: url(/pics/fff.svg);
     overflow: hidden;
 }

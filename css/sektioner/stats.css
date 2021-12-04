@@ -1,4 +1,6 @@
-/* ================================ STATS ================================ */
+/* ================================ STATS ================================ 
+ * Kodad av Casper Bjarnetoft
+ */
 
 .head {
     margin-top: 2rem;
@@ -46,6 +48,3 @@
 .stats:nth-child(even) {
     text-align: right;
 }
-
-
-/* Informations sida end */

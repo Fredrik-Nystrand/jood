@@ -11,7 +11,7 @@ body {
 }
 
 body::before {
-    /* Här skapas och stylas bakgrundsbilden till headern och hero */
+    /* Skapa elementet som ska hålla bakgrundsbilden */
     content: "";
     display: none;
 }
